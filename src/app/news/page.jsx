@@ -4,9 +4,6 @@ import { getPosts } from "@/services";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "ຂ່າວສານທັງໝົດ",
-};
 const Page = () => {
   const [posts, setPosts] = useState([]);
 
