@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { lawLinks } from "@/constants/lawLinks";
 
 const NavBar = () => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const NavBar = () => {
           }}
         >
           <Image
-            src={"images/logo.png"}
+            src={"/images/logo.png"}
             unoptimized
             alt="lao assembly logo"
             fill
@@ -83,16 +84,17 @@ const NavBar = () => {
             <li>
               <a>ນິຕິກຳ</a>
               <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
+                {lawLinks.map((link) => (
+                  <li key={link.id}>
+                    <Link href={link.url}>{link.title}</Link>
+                  </li>
+                ))}
               </ul>
             </li>
             <li>
-              <Link href={`/contact`}>ຕິດຕໍ່</Link>
+              <Link target="_blank" href={`/contact`}>
+                ຕິດຕໍ່
+              </Link>
             </li>
           </ul>
         </div>
@@ -112,12 +114,13 @@ const NavBar = () => {
             <details>
               <summary>ນິຕິກຳ</summary>
               <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
+                {lawLinks.map((link) => (
+                  <li key={link.id}>
+                    <Link target="_blank" href={link.url}>
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </details>
           </li>

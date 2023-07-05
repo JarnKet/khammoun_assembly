@@ -5,8 +5,7 @@ const Footer = () => {
     <footer className="p-10 footer bg-neutral text-base-100">
       <div>
         <Image
-          src={"images/logo.png"}
-          unoptimized
+          src={"/images/logo.png"}
           alt="lao assembly logo"
           width={60}
           height={60}

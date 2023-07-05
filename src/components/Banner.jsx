@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Banner = ({ text }) => {
   return (
-    <div className="relative flex items-center justify-center w-full h-[150px] border-red-500">
+    <div className="relative flex items-center justify-center w-full h-[250px] border-red-500">
       <h1 className="bannerTitle">{text}</h1>
 
       <Image

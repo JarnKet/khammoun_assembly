@@ -1,21 +1,10 @@
-"use client";
 import { Banner } from "@/components";
 import { getPosts } from "@/services";
-import { useState, useEffect } from "react";
+
 import Link from "next/link";
 
-const Page = () => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    async function fetchPosts() {
-      const res = await getPosts();
-      setPosts(res);
-      console.log(posts);
-    }
-
-    fetchPosts();
-  }, []);
+const Page = async () => {
+  const posts = await getPosts();
 
   return (
     <>
@@ -50,3 +39,4 @@ const Page = () => {
 };
 
 export default Page;
+export const revalidate = 86400; // revalidate this page every 1 day
