@@ -1,15 +1,8 @@
-# Khammoun Assembly Office
+# Khammoun Assembly Office Website
 
-## Todo List
+## Dev Stack
 
-- [x] ຕິດຕັ້ງ Hygraph
-- [x] ຕັ້ງຄ່າ env
-- [x] ສ້າງຟາຍ services/index ເພື່ອດຶງຂໍ້ມູນມາ
-- [x] ນຳຂໍ້ມູນຂ່າວສານຂອງສະພາ ໄປສະແດງຜົນ
-- [x] ນຳເອົາລິ້ງນິຕິກຳຈາກສະພາແຫ່ງຊາດມາໃສ່ ໃນ NavBar
-- [x] ປັບປຸງໜ້າຫຼັກໃນສ່ວນຂອງ Hero
-- [x] ແກ້ໄຂ Logo ບໍ່ສະແດງຜົນໃນ Dynamic Route
-- [x] ແກ້ໄຂການດຶງຂໍ້ມູນໃນ services
-- [x] ປ່ຽນຮູບແບບການດຶງຂໍ້ມູນໃຫ້ຖືກຕາມມາດຕະຖານຂອງ Next.js
-- [x] ເອົາຂ່າວສານບາງສ່ວນ ມາວາງໃສ່ໜ້າຫຼັກ
-- [x] ຕັ້ງຄ່າໃຫ້ function ດຶງຂໍ້ມູນ, ດຶງຂໍ້ມູນທຸກໆ 1 ວັນ
+- Next.js 13 App Router
+- Tailwind CSS + DaisyUI
+- Hygraph
+- GraphQL
