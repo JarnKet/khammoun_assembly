@@ -13,9 +13,9 @@
     @apply text-4xl font-bold text-center text-neutral;
   }
   .bannerTitle {
-    @apply text-4xl font-bold text-center text-base-100;
+    @apply text-xl font-bold text-center lg:text-4xl;
   }
   .postDetail p {
-    @apply mb-4 text-neutral-focus;
+    @apply flex mb-4 text-lg text-neutral-focus;
   }
 }

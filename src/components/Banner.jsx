@@ -1,12 +1,16 @@
 import Image from "next/image";
-const Banner = ({ text }) => {
+const Banner = ({
+  text,
+  txtStyle = "text-base-100",
+  img = "images/location.jpg",
+}) => {
   return (
     <div className="relative flex items-center justify-center w-full h-[250px] border-red-500">
-      <h1 className="bannerTitle">{text}</h1>
+      <h1 className={`bannerTitle ${txtStyle}`}>{text}</h1>
 
       <Image
         className="absolute inset-0 z-[-1]"
-        src="images/location.jpg"
+        src={img}
         alt="banner"
         fill
         objectFit="cover"
