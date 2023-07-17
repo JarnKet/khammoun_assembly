@@ -6,7 +6,7 @@ export const hygraph = new GraphQLClient(graphqlAPI);
 
 const getPostsQuery = gql`
   query GetPosts($limit: Int!) {
-    posts(first: $limit) {
+    posts(first: $limit, orderBy: date_DESC) {
       title
       slug
       date
