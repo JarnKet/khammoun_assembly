@@ -1,4 +1,4 @@
-import { Banner } from "@/components";
+import Banner from "@/components/Banner";
 import { members } from "@/constants/member";
 
 export const metadata = {

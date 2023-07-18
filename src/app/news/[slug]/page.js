@@ -1,5 +1,5 @@
 import { getPostDetail } from "@/services";
-import { Banner } from "@/components";
+import Banner from "@/components/Banner";
 
 const Page = async ({ params }) => {
   const postDetail = await getPostDetail(params.slug);

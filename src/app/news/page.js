@@ -1,4 +1,4 @@
-import { Banner } from "@/components";
+import Banner from "@/components/Banner";
 import { getPosts } from "@/services";
 
 import Link from "next/link";

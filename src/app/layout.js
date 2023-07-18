@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Noto_Sans_Lao_Looped } from "next/font/google";
 
-import { NavBar, Footer } from "@/components";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const notoSansLooped = Noto_Sans_Lao_Looped({ subsets: ["latin"] });
 

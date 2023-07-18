@@ -1,6 +1,10 @@
-import { Banner } from "@/components";
+import Banner from "@/components/Banner";
+import Link from "next/link";
 
 import Image from "next/image";
+
+const commentLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeeiZVtwPnA989smTyCxCt4B3BuAKZccPwgxUVqmX-hEwvcQg/viewform?pli=1";
 
 export const metadata = {
   title: "ສາຍຕິດຕໍ່",
@@ -22,7 +26,9 @@ const Page = () => {
             ທ່ານສາມາດສົ່ງຄວາມຄິດເຫັນ ແລະ ຄຳຮຽກຮ້ອງຕໍ່ສະພາໄດ້
             ເພື່ອຈະນຳໄປປັບປຸງການເຮັດວຽກເພື່ອຮັບໃຊ້ປະຊາຊົນໃຫ້ມີປະສິດທິພາບທີ່ດີຂຶ້ນ.
           </p>
-          <button className="btn btn-neutral">ຄຳຮ້ອງຮຽນ ແລະ ຄວາມຄິດເຫັນ</button>
+          <Link href={commentLink} target="_blank" className="btn btn-neutral">
+            ຄຳຮ້ອງຮຽນ ແລະ ຄວາມຄິດເຫັນ
+          </Link>
         </div>
       </section>
     </>
