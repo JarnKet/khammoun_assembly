@@ -19,7 +19,11 @@ const Footer = () => {
       <div>
         <span className="footer-title">ຂໍ້ມູນຕິດຕໍ່</span>
         <div className="flex flex-col gap-4">
-          <Link href={`https://web.facebook.com/poutthy`} target="_blank">
+          <Link
+            href={`https://web.facebook.com/poutthy`}
+            target="_blank"
+            className="flex items-center gap-4"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -29,6 +33,7 @@ const Footer = () => {
             >
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
             </svg>
+            <p>ສະພາປະຊາຊົນ ແຂວງຄຳມ່ວນ</p>
           </Link>
           <div className="flex items-center gap-x-4">
             <svg
