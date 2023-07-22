@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Noto_Sans_Lao_Looped } from "next/font/google";
+import { Noto_Serif_Lao } from "next/font/google";
 
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const notoSansLooped = Noto_Sans_Lao_Looped({ subsets: ["latin"] });
+const notoSerifLao = Noto_Serif_Lao({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ສະພາປະຊາຊົນ ແຂວງຄຳມ່ວນ",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={notoSansLooped.className}>
+      <body className={notoSerifLao.className}>
         <NavBar />
         {children}
         <Footer />
