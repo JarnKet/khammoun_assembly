@@ -71,7 +71,7 @@ const Footer = () => {
               />
             </svg>
 
-            <p>{`poutthy.thanousone@gmail.com`}</p>
+            <p>{`Khammouane.pc@gmail.com`}</p>
           </Link>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 const Banner = ({
   text,
   txtStyle = "text-base-100",
-  img = "images/location.jpg",
+  img = "/images/location.jpg",
 }) => {
   return (
     <div className="relative flex items-center justify-center w-full h-[250px] border-red-500">

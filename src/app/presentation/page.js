@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner";
-import { presentationTxt } from "@/constants/presentationTxt";
+import { presentationTxt } from "@/constants";
 
 export const metadata = {
   title: "ພາກສະເໜີ",
