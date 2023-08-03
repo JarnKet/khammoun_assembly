@@ -9,10 +9,19 @@ const Page = () => {
   return (
     <>
       <Banner text={`ສະມາຊິກສະພາປະຊາຊົນແຂວງຄຳມ່ວນ ຊຸດທີ II`} />
-      <section className="flex items-center justify-center lg:min-h-screen">
+      <section className="flex flex-col items-center justify-center py-4 lg:min-h-screen">
         <div className="relative w-[320px] h-[240px] lg:w-[1280px] lg:h-[720px]">
           <Image
-            src={`/images/province_member.jpg`}
+            src={`/images/province_member1.jpg`}
+            alt="province member"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
+        <div className="relative w-[320px] h-[240px] lg:w-[1280px] lg:h-[720px]">
+          <Image
+            src={`/images/province_member2.jpg`}
             alt="province member"
             fill
             sizes="100%"
